@@ -2,4 +2,6 @@
 
 An Autonomous-Trading Cryptocurrency Algorithm.
 
-## Cryptos gon
+## Cryptos gonna crypt...
+
+Gloria is an experiment
