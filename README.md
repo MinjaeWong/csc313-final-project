@@ -4,4 +4,4 @@ An Autonomous-Trading Cryptocurrency Algorithm.
 
 ## Cryptos gonna crypt...
 
-Gloria is an experiment in automated trading & algorithmic value predictions for Cryptocurrency investments. 
+Gloria is an experiment in automated trading & algorithmic value predictions for Cryptocurrency investments. She scrapes Cryptocurrency markets every 10
