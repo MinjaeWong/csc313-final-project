@@ -12,4 +12,4 @@ She's Smort.
 
 ### Features:
 
-Curren
+Currently supports BTC only, but this will
