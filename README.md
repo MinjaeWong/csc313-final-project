@@ -12,4 +12,4 @@ She's Smort.
 
 ### Features:
 
-Currently supports BTC only, but this will
+Currently supports BTC only, but this will soon cover Ripple, Ethereum, Litecoin & Bitcoin C
