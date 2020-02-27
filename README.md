@@ -12,4 +12,8 @@ She's Smort.
 
 ### Features:
 
-Currently supports BTC only, but this will soon cover Ripple, Ethereum, Litecoin & Bitcoin C
+Currently supports BTC only, but this will soon cover Ripple, Ethereum, Litecoin & Bitcoin Cash.
+
+### TO-DO:
+
+She gets a little grumpy when t
