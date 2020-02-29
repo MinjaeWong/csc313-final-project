@@ -16,4 +16,4 @@ Currently supports BTC only, but this will soon cover Ripple, Ethereum, Litecoin
 
 ### TO-DO:
 
-She gets a little grumpy when the entire cryptocurrency market has extreme shifts, and doesn't really know what to do... W
+She gets a little grumpy when the entire cryptocurrency market has extreme shifts, and doesn't really know what to do... We need to work on that. It happens a lo
