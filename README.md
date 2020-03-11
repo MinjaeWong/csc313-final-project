@@ -22,3 +22,7 @@ She gets a little grumpy when the entire cryptocurrency market has extreme shift
 
 With great power comes great crypto gains. 
 
+```
+With love, 
+hez.ninja/
+```
