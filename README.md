@@ -20,4 +20,5 @@ She gets a little grumpy when the entire cryptocurrency market has extreme shift
 
 ### Make dat money:
 
-With 
+With great power comes great crypto gains. 
+
