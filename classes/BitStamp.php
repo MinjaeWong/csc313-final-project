@@ -6,4 +6,6 @@
 
 
 class BitStamp {
-    
+    private $key;
+    private $secret;
+    private
