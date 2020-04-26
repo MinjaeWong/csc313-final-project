@@ -8,4 +8,7 @@
 class BitStamp {
     private $key;
     private $secret;
-    private
+    private $clientId;
+    public $currencyPair;
+
+    
