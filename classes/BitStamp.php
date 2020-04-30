@@ -11,4 +11,5 @@ class BitStamp {
     private $clientId;
     public $currencyPair;
 
-    function __construct($currencyPair
+    function __construct($currencyPair = 'btcusd') {
+        $this->set_
