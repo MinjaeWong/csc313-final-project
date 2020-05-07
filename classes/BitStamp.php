@@ -14,4 +14,5 @@ class BitStamp {
     function __construct($currencyPair = 'btcusd') {
         $this->set_currencyPair($currencyPair);
 
-        $this->key = 
+        $this->key = BITSTAMP_KEY;
+        $this->secret = BITSTAMP_SECRET;
