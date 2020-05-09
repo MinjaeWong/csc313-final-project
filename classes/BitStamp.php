@@ -16,4 +16,6 @@ class BitStamp {
 
         $this->key = BITSTAMP_KEY;
         $this->secret = BITSTAMP_SECRET;
-        $this->clientId = BITSTAMP_CL
+        $this->clientId = BITSTAMP_CLIENTID;
+
+        if ($this->key == '' || $th
