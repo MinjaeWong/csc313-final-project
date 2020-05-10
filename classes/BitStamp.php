@@ -18,4 +18,5 @@ class BitStamp {
         $this->secret = BITSTAMP_SECRET;
         $this->clientId = BITSTAMP_CLIENTID;
 
-        if ($this->key == '' || $this->secret == ''  || $this->clientId == 
+        if ($this->key == '' || $this->secret == ''  || $this->clientId == '')
+            throw new \Excep
