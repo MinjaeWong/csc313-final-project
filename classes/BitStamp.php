@@ -19,4 +19,7 @@ class BitStamp {
         $this->clientId = BITSTAMP_CLIENTID;
 
         if ($this->key == '' || $this->secret == ''  || $this->clientId == '')
-            throw new \Exception('BitStamp Key, Secrect and Client ID
+            throw new \Exception('BitStamp Key, Secrect and Client ID need to be set');
+    }
+
+    function get_c
