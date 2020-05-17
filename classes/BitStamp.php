@@ -23,4 +23,7 @@ class BitStamp {
     }
 
     function get_currencyPair() {
-        return $this->currency
+        return $this->currencyPair;
+    }
+
+    function set_currencyPair($
