@@ -22,4 +22,5 @@ class BitStamp {
             throw new \Exception('BitStamp Key, Secrect and Client ID need to be set');
     }
 
-    function get_c
+    function get_currencyPair() {
+        return $this->currency
