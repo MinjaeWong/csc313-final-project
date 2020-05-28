@@ -27,4 +27,7 @@ class BitStamp {
     }
 
     function set_currencyPair($currencyPair) {
-        $this->currencyPai
+        $this->currencyPair = $currencyPair;
+    }
+
+    public funct
