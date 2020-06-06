@@ -30,4 +30,4 @@ class BitStamp {
         $this->currencyPair = $currencyPair;
     }
 
-    public funct
+    public function bitstamp_query($path, $req = [
