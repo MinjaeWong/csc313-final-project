@@ -32,4 +32,4 @@ class BitStamp {
 
     public function bitstamp_query($path, $req = [], $verb = 'post') {
 
-        // generate a 
+        // generate a nonce as microtime, with as-string handling to avo
