@@ -30,4 +30,6 @@ class BitStamp {
         $this->currencyPair = $currencyPair;
     }
 
-    public function bitstamp_query($path, $req = [
+    public function bitstamp_query($path, $req = [], $verb = 'post') {
+
+        // generate a 
