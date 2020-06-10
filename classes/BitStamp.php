@@ -33,4 +33,5 @@ class BitStamp {
     public function bitstamp_query($path, $req = [], $verb = 'post') {
 
         // generate a nonce as microtime, with as-string handling to avoid problems with 32bits systems
-        $mt
+        $mt = explode(' ', microtime());
+        $r
