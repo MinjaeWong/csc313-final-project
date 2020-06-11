@@ -34,4 +34,5 @@ class BitStamp {
 
         // generate a nonce as microtime, with as-string handling to avoid problems with 32bits systems
         $mt = explode(' ', microtime());
-        $r
+        $req['nonce'] = $mt[1] . substr($mt[0], 2, 6);
+ 
