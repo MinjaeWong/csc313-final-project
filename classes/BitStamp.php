@@ -36,4 +36,4 @@ class BitStamp {
         $mt = explode(' ', microtime());
         $req['nonce'] = $mt[1] . substr($mt[0], 2, 6);
         $req['key'] = $this->key;
-        $req['signatur
+        $req['signature'] = strtoupper(hash_hmac('sha256', $req['nonce'] . $th
