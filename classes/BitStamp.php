@@ -39,4 +39,6 @@ class BitStamp {
         $req['signature'] = strtoupper(hash_hmac('sha256', $req['nonce'] . $this->clientId . $this->key, $this->secret));
 
         // generate the POST data string
-        $post_data = http_build_query($req, '',
+        $post_data = http_build_query($req, '', '&');
+
+        // our curl handle
