@@ -42,3 +42,4 @@ class BitStamp {
         $post_data = http_build_query($req, '', '&');
 
         // our curl handle
+        $curl = curl_init();
