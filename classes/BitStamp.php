@@ -44,4 +44,5 @@ class BitStamp {
         // our curl handle
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://www.bitsta
+            CURLOPT_URL => 'https://www.bitstamp.net/api/v2/' . $path .'/',
+            CURLOPT_RETU
