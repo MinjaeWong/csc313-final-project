@@ -43,3 +43,5 @@ class BitStamp {
 
         // our curl handle
         $curl = curl_init();
+        curl_setopt_array($curl, array(
+   
