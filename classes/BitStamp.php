@@ -50,3 +50,6 @@ class BitStamp {
             CURLOPT_SSL_VERIFYPEER => LIVE_ENVIRONMENT ? 1 : 0, // Enable SSL if in live enviroment
             CURLOPT_SSL_VERIFYHOST => 2
         ));
+
+        if ($verb == 'post')
+            curl
