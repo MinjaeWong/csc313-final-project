@@ -47,4 +47,5 @@ class BitStamp {
             CURLOPT_URL => 'https://www.bitstamp.net/api/v2/' . $path .'/',
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_USERAGENT => 'Bitstamp Data',
-            CURLOPT_SSL_VERIFYPEER => LIVE_ENVIRONMENT ? 1 : 0, // Enable S
+            CURLOPT_SSL_VERIFYPEER => LIVE_ENVIRONMENT ? 1 : 0, // Enable SSL if in live enviroment
+            CUR
