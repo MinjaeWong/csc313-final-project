@@ -55,4 +55,5 @@ class BitStamp {
             curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
 
         // run the query
-        $r
+        $resp = curl_exec($curl);
+        i
