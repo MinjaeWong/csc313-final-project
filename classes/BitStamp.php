@@ -52,4 +52,4 @@ class BitStamp {
         ));
 
         if ($verb == 'post')
-            curl
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data
