@@ -56,4 +56,5 @@ class BitStamp {
 
         // run the query
         $resp = curl_exec($curl);
-        i
+        if ($resp === false)
+            throw 
