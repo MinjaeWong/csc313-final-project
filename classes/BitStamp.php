@@ -57,4 +57,4 @@ class BitStamp {
         // run the query
         $resp = curl_exec($curl);
         if ($resp === false)
-            throw 
+            throw new \Exception('Could not get reply: ' 
