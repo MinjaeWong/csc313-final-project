@@ -61,4 +61,5 @@ class BitStamp {
 
         $dec = json_decode($resp, true);
 
-        if (is_n
+        if (is_null($dec))
+            throw new \Exception('I
