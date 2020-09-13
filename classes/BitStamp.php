@@ -59,4 +59,6 @@ class BitStamp {
         if ($resp === false)
             throw new \Exception('Could not get reply: ' . curl_error($curl));
 
-        $dec = js
+        $dec = json_decode($resp, true);
+
+        if (is_n
