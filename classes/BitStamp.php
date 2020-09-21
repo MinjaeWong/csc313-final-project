@@ -71,4 +71,5 @@ class BitStamp {
         return $this->bitstamp_query("ticker/{$this->currencyPair}", array(), 'get');
     }
 
-    functio
+    function get_balance() {
+        return $this->bits
