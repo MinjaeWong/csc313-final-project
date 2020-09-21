@@ -62,4 +62,4 @@ class BitStamp {
         $dec = json_decode($resp, true);
 
         if (is_null($dec))
-            throw new \Exception('Invalid data received, please ma
+            throw new \Exception('Invalid data received, please make sure connection is working and requested A
