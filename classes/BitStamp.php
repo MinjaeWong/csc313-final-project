@@ -67,4 +67,5 @@ class BitStamp {
         return $dec;
     }
 
-  
+    function get_data() {
+        return $
