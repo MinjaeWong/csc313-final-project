@@ -68,4 +68,7 @@ class BitStamp {
     }
 
     function get_data() {
-        return $this->bitstamp_query("ticker/{$this->curre
+        return $this->bitstamp_query("ticker/{$this->currencyPair}", array(), 'get');
+    }
+
+    functio
