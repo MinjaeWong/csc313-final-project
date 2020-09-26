@@ -72,4 +72,7 @@ class BitStamp {
     }
 
     function get_balance() {
-        return $this->bits
+        return $this->bitstamp_query('balance');
+    }
+
+    function buyMarketOrder($
