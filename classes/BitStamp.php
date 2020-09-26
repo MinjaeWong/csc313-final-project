@@ -76,4 +76,4 @@ class BitStamp {
     }
 
     function buyMarketOrder($amount) {
-        return $this->bitstamp
+        return $this->bitstamp_query("buy/market/{$this->currencyPair}
