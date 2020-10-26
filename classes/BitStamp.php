@@ -80,4 +80,4 @@ class BitStamp {
     }
 
     function sellMarketOrder($amount) {
-        re
+        return $this->bitstamp_query("sell/market/{$
