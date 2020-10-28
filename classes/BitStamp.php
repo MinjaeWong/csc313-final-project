@@ -80,4 +80,7 @@ class BitStamp {
     }
 
     function sellMarketOrder($amount) {
-        return $this->bitstamp_query("sell/market/{$this->currencyPair}", ['amount' =
+        return $this->bitstamp_query("sell/market/{$this->currencyPair}", ['amount' => $amount]);
+    }
+
+    function openOrders(
