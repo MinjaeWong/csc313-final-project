@@ -87,4 +87,5 @@ class BitStamp {
         return $this->bitstamp_query('open_orders/all');
     }
 
-    function user
+    function userTransactions() {
+        return $this
