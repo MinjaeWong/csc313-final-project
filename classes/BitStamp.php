@@ -88,4 +88,5 @@ class BitStamp {
     }
 
     function userTransactions() {
-        return $this
+        return $this->bitstamp_query('user_transactions');
+   
