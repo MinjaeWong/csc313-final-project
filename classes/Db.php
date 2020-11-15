@@ -6,4 +6,5 @@
 class Db {
     protected static $connection;
 
- 
+    public function connect() {
+        if(!is
