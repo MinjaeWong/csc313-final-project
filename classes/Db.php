@@ -7,4 +7,5 @@ class Db {
     protected static $connection;
 
     public function connect() {
-        if(!is
+        if(!isset(self::$connection)) {
+            self::
