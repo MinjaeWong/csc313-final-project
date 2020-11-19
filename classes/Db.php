@@ -8,4 +8,4 @@ class Db {
 
     public function connect() {
         if(!isset(self::$connection)) {
-            self::
+            self::$connection = new mysqli(DB_HOST, DB_USER
