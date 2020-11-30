@@ -14,4 +14,7 @@ class Db {
         if(self::$connection === false) {
             return false;
         }
-        return self::$con
+        return self::$connection;
+    }
+
+    public function query($query)
