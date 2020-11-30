@@ -12,4 +12,6 @@ class Db {
         }
 
         if(self::$connection === false) {
-            re
+            return false;
+        }
+        return self::$con
