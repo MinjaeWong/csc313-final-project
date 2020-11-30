@@ -17,4 +17,5 @@ class Db {
         return self::$connection;
     }
 
-    public function query($query)
+    public function query($query) {
+        $connection = $this->connect();
