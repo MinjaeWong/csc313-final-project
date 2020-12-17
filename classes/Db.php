@@ -20,4 +20,7 @@ class Db {
     public function query($query) {
         $connection = $this->connect();
         $result = $connection->query($query);
-        ret
+        return $result;
+    }
+
+    public functi
