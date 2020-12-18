@@ -23,4 +23,5 @@ class Db {
         return $result;
     }
 
-    public functi
+    public function select($query) {
+        $rows = array()
