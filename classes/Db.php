@@ -25,4 +25,7 @@ class Db {
 
     public function select($query) {
         $rows = array();
-        $result = $this->query($query)
+        $result = $this->query($query);
+
+        if($result === false) {
+ 
