@@ -24,4 +24,5 @@ class Db {
     }
 
     public function select($query) {
-        $rows = array()
+        $rows = array();
+        $result = $this->query($query)
