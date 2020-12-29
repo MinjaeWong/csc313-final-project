@@ -28,4 +28,7 @@ class Db {
         $result = $this->query($query);
 
         if($result === false) {
- 
+            return false;
+        }
+
+   
