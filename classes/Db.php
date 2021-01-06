@@ -31,4 +31,5 @@ class Db {
             return false;
         }
 
-   
+        while ($row = $result->fetch_assoc()) {
+          
