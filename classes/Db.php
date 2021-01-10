@@ -39,4 +39,7 @@ class Db {
 
     public function error() {
         $connection = $this->connect();
-    
+        return $connection->error;
+    }
+
+    public
