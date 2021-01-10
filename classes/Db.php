@@ -34,4 +34,7 @@ class Db {
         while ($row = $result->fetch_assoc()) {
             $rows[] = $row;
         }
-        ret
+        return $rows;
+    }
+
+    public function erro
