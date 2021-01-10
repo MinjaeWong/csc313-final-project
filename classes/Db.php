@@ -37,4 +37,6 @@ class Db {
         return $rows;
     }
 
-    public function erro
+    public function error() {
+        $connection = $this->connect();
+    
