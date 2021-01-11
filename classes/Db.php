@@ -42,4 +42,5 @@ class Db {
         return $connection->error;
     }
 
-    public
+    public function quote($value) {
+        $connecti
