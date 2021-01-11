@@ -43,4 +43,5 @@ class Db {
     }
 
     public function quote($value) {
-        $connecti
+        $connection = $this->connect();
+        return $connection
