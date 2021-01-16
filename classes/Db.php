@@ -44,4 +44,6 @@ class Db {
 
     public function quote($value) {
         $connection = $this->connect();
-        return $connection
+        return $connection->real_escape_string($value);
+    }
+}
