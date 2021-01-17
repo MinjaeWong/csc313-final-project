@@ -36,3 +36,49 @@ class Gloria{
         return $this->holding;
     }
     function get_profit() {
+        return $this->profit;
+    }
+    function get_firstBuy() {
+        return $this->firstBuy;
+    }
+    function get_lastSell() {
+        return $this->lastSell;
+    }
+
+    function set_divergence($divergence) {
+        $this->divergence = $divergence;
+    }
+    function set_buyPrice($divergence) {
+        $this->buyPrice = $divergence;
+    }
+    function set_macdPrev($macdPrev) {
+        $this->macdPrev = $macdPrev;
+    }
+    function set_holding($holding) {
+        $this->holding = $holding;
+    }
+    function set_profit($profit) {
+        $this->profit = $profit;
+    }
+    function set_firstBuy($firstBuy) {
+        $this->firstBuy = $firstBuy;
+    }
+    function set_lastSell($lastSell) {
+        $this->lastSell = $lastSell;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    //  FUNCTIONS
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function buy($key, $lastKey, $price, $date, $mode, $macd){
+
+        // SIM MODE
+        if($mode == "simulation") {
+                echo "<p style='margin: 0; background:#f7f41f; border-bottom: 1px solid #000;'>[BUY DATE] $date [BUY PRICE] ".number_format($price, 2, '.', '')." [MACD] $macd</p>";
+                $this->set_buyPrice($price);
+                $this->set_holding(TRUE);
+
+                if ($this->get_firstBuy() == NULL) {
+                    $this->set_firstBuy($date);
+                }
