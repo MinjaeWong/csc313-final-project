@@ -82,3 +82,50 @@ class Gloria{
                 if ($this->get_firstBuy() == NULL) {
                     $this->set_firstBuy($date);
                 }
+
+        // LIVE MODE
+        }else if($mode == "live") {
+            if($key == $lastKey) {
+                // Save Buy to DB & make live order
+                $trade = new Trade();
+                $trade->buy(FIXED_TRADE_AMOUNT, $price, $date);
+            }
+        }
+        return;
+    }
+
+    function sell($sellPrice, $date){
+        // Save Sell to DB & make live order
+        $trade = new Trade();
+        $trade->sell($sellPrice, $date);
+    }
+
+    function get_LiveHolding(){
+        // Check DB Holding
+        $holding = new Trade();
+        $holding = $holding->get_lastTrade();
+
+        if($holding['holding']){
+            $this->set_buyPrice($holding['buy_price']);
+            $this->set_holding(TRUE);
+        }
+    }
+
+    function changeInPercent($a, $b){
+        $current = $a;
+        $previous= $b;
+        $diff = $current - $previous;
+        $more_less = $diff > 0 ? "+" : "-";
+        $diff = abs($diff);
+        $percentChange = ($diff/$previous)*100;
+        return $more_less.number_format($percentChange, 2, '.', '');
+    }
+
+    function get_profitReport(){
+        $date1 = new DateTime($this->get_firstBuy());
+        $date2 = new DateTime();
+        $dateDiff = $date1->diff($date2);
+        $dateDiff = $dateDiff->days;
+
+        echo "<h3>";
+        echo "<span>Profit (Last $dateDiff Days):</span><span style='color:".(number_format($this->get_profit(), 2, '.', '') > 0 ? '#48F741' : '#f74141').";'> ".(number_format($this->get_profit(), 2, '.', '') > 0 ? '+' : '').number_format($this->get_profit(), 2, '.', '')."%</span><br/>
