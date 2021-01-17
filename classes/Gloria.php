@@ -129,3 +129,47 @@ class Gloria{
 
         echo "<h3>";
         echo "<span>Profit (Last $dateDiff Days):</span><span style='color:".(number_format($this->get_profit(), 2, '.', '') > 0 ? '#48F741' : '#f74141').";'> ".(number_format($this->get_profit(), 2, '.', '') > 0 ? '+' : '').number_format($this->get_profit(), 2, '.', '')."%</span><br/>
+              <span>Profit-Per-Day:</span><span style='color:".(number_format(($this->get_profit() / $dateDiff), 2, '.', '') > 0 ? '#48F741' : '#f74141').";'> ".(number_format(($this->get_profit() / $dateDiff), 2, '.', '') > 0 ? '+' : '').number_format(($this->get_profit() / $dateDiff), 2, '.', '')."%</span>";
+        echo "</h3>";
+    }
+
+    function calculateProfitPercentage($amount, $buyPrice, $sellPrice) {
+        $coinsHeld = $amount / $buyPrice;
+        $coinsHeld = $coinsHeld - ($coinsHeld * 0.0025);
+        $coinsSold = $coinsHeld - ($coinsHeld * 0.0025);
+        $profit = (($coinsSold * $sellPrice) - $amount) / $amount * 100;
+
+        return $profit;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    //  THE ALGORITHM, The Heart and soul of our Gal
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function run($data, $config, $mode){
+
+        // Get Key of Last Item (Only trade on latest Scrape)
+        $lastKey = count($data) - 1;
+
+        if($mode == "live") {
+            // Check if holding BTC
+            $this->get_LiveHolding();
+        }
+
+        foreach ($data as $key => $val){
+
+            if($this->get_divergence()){
+
+                // MACD Sell Trigger
+                if($this->get_divergence() > 0 && $val['divergence'] < 0){
+
+                    $date = $val['datestamp'];
+                    $macd = $val['macd'];
+                    $sellPrice = $val['bid_price'];
+                    $buyPrice = $this->get_buyPrice();
+                    $feeOffset = $buyPrice * 0.005;
+                    $buyPriceIncludingFee = $buyPrice + $feeOffset;
+
+                    if($buyPrice > 0){
+
+                        /////////////////////////////////////////////////////////////////////////////////////////////////////
