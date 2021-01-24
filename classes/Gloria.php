@@ -202,3 +202,40 @@ class Gloria{
                                 if($key == $lastKey) {
                                     $this->sell($sellPrice, $date);
                                 }
+                            }
+                        }else if($this->get_holding() && $mode == "simulation"){
+                            echo "<p style='margin: 0; background:#5d5d5d; border-bottom: 1px solid #000;'>[SELL DATE] $date [SELL PRICE] ".number_format($sellPrice, 2, '.', '')." ".$this->gloriaScoreSell($val['bid_price'], $buyPriceIncludingFee, $macd)." [MACD] $macd</p>";
+                        }
+                    }
+
+                // MACD Buy Trigger
+                }else if($val['divergence'] > 0 && $this->get_divergence() < 0){
+
+                    $date = $val['datestamp'];
+                    $volume = $val['volume'];
+                    $volumeAv = $val['vol_sma50'];
+                    $price = $val['ask_price'];
+                    $priceAv = $val['ema26'];
+                    $macd = $val['macd'];
+                    $prevMacd = $this->get_macdPrev();
+
+                    $diff = $this->changeInPercent($volume, $volumeAv);
+
+                    if($this->get_macdPrev() == NULL){
+                        $prevMacd = 0;
+                    }
+
+                    if(!$this->get_holding()){
+
+                        /////////////////////////////////////////////////////////////////////////////////////////////////////
+                        //  MAIN BUY ALGORITHM
+                        /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                        if(($volume + ($volumeAv*$config['VolAvMultiplier'])) > $volumeAv && $price < $priceAv && ($macd + $config['MACDBuyOffset']) < $prevMacd && $macd < $config['MACDMinimum']){
+
+                            // Bitcoin Specific Rules. Need to do this for alt-coins when we have a larger dataset
+                            if($macd < -50 && $macd > -60){
+                                if($diff > 12){
+                                    // Commit Buy
+                                    $this->buy($key, $lastKey, $price, $date, $mode, $macd);
+                                }
