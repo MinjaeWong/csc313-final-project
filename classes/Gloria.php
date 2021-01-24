@@ -239,3 +239,43 @@ class Gloria{
                                     // Commit Buy
                                     $this->buy($key, $lastKey, $price, $date, $mode, $macd);
                                 }
+                            }else if($macd < -60){
+                                if($diff > 15){
+                                    // Commit Buy
+                                    $this->buy($key, $lastKey, $price, $date, $mode, $macd);
+                                }
+                            }else{
+                                // Commit Buy
+                                $this->buy($key, $lastKey, $price, $date, $mode, $macd);
+                            }
+
+                        }else if($mode == "simulation"){
+                            echo "<p style='margin: 0; background:#5d5d5d; border-bottom: 1px solid #000;'>[BUY DATE] $date [BUY PRICE] ".number_format($price, 2, '.', '')." ".$this->gloriaScoreBuy($date, $volume, $volumeAv, $price, $priceAv, $macd, $prevMacd, $diff)." [MACD] $macd</p>";
+                        }
+
+                        $this->set_macdPrev($macd);
+                    }
+                }
+            }
+
+            $this->set_divergence($val['divergence']);
+        }
+
+        return $data;
+    }
+
+    // These Functions are sloppy. Will re-do these. works for now.
+    function gloriaScoreBuy($datestamp, $volume, $volumeAv, $price, $priceAv, $macd, $prevMacd, $diff){
+
+        $volScore = (($volume + ($volumeAv*0.02)) / $volumeAv) * 100;
+        $priceScore = ($priceAv / $price) * 100;
+
+        if($prevMacd < 0){
+            $macca = ($macd+18) + abs($prevMacd);
+            $macdScore = 100 - $macca;
+        }else{
+            $macca = ($macd+18) - abs($prevMacd);
+            $macdScore = 100 - $macca;
+        }
+
+        if($macd < -50 && $macd > -60){
