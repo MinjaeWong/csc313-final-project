@@ -173,3 +173,32 @@ class Gloria{
                     if($buyPrice > 0){
 
                         /////////////////////////////////////////////////////////////////////////////////////////////////////
+                        //  MAIN SELL ALGORITHM
+                        /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                        // Failsafe to minimise losses.
+                        $failsafeSell = false;
+
+                        if ($this->changeInPercent($val['bid_price'], $buyPriceIncludingFee) < -6)
+                            $failsafeSell = true;
+
+                        if((($val['bid_price'] > $buyPriceIncludingFee && $macd > $config['MACDSellOffset']) || $failsafeSell) && $this->get_holding()){
+
+                            // SIM MODE
+                            if($mode == "simulation"){
+                                    $profit = $this->calculateProfitPercentage(FIXED_TRADE_AMOUNT, $buyPrice, $sellPrice);
+                                    $profitPerc = number_format($profit, 2, '.', '');
+
+                                    echo "<p style='margin: 0; border-bottom: 1px solid #000; background:".($profitPerc > 0 ? '#48F741' : '#f74141').";'>[SELL DATE] $date [SELL PRICE] ".number_format($sellPrice, 2, '.', '')." [PROFIT] $profitPerc % [MACD] $macd</p>";
+                                    $this->set_holding(FALSE);
+
+                                    $totalProfit = $this->get_profit() + $profit;
+                                    $this->set_profit($totalProfit);
+                                    $this->set_lastSell($date);
+
+                            // LIVE MODE
+                            }else if($mode == "live") {
+                                // Commit Sell
+                                if($key == $lastKey) {
+                                    $this->sell($sellPrice, $date);
+                                }
