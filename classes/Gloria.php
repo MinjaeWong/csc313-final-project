@@ -279,3 +279,47 @@ class Gloria{
         }
 
         if($macd < -50 && $macd > -60){
+            $diffscore = ($diff / 12) * 100;
+        }else if($macd < -60){
+            $diffscore = ($diff / 15) * 100;
+        }else{
+            $diffscore = false;
+        }
+
+
+        if($volScore > 100){
+            $volScore = 100;
+        }
+        if($priceScore > 100){
+            $priceScore = 100;
+        }
+        if($macdScore > 100){
+            $macdScore = 100;
+        }
+
+        if($diffscore){
+            if($diffscore > 100){
+                $diffscore = 100;
+            }
+            $macdScore = ($macdScore + $diffscore) / 2;
+        }
+
+        return "[Volume Score] ".number_format($volScore, 2, '.', '')."% [Price Score] ".number_format($priceScore, 2, '.', '')."% [MACD Score] ".number_format($macdScore, 2, '.', '')."%";
+    }
+
+    function gloriaScoreSell($bidPrice, $buyPriceIncFees, $macd){
+
+        $priceScore = ($bidPrice / $buyPriceIncFees) * 100;
+        $macdScore = ($macd / 20) * 100;
+
+        if($priceScore > 100){
+            $priceScore = 100;
+        }
+        if($macdScore > 100){
+            $macdScore = 100;
+        }
+        if($macdScore < 0){
+            $macdScore = 0;
+        }
+
+        return "[Price Score] ".number_format($priceScore, 2, '.', '')."% [MACD Score] ".number_format($macdScore, 2, '.', '')."%";
