@@ -323,3 +323,5 @@ class Gloria{
         }
 
         return "[Price Score] ".number_format($priceScore, 2, '.', '')."% [MACD Score] ".number_format($macdScore, 2, '.', '')."%";
+    }
+}
