@@ -8,4 +8,5 @@ class MovingAverages{
     var $lastEMA12;
     var $lastEMA26;
 
-    function __construct($lastEMA9=NULL, $lastEMA12=NULL, $lastEMA26=NULL
+    function __construct($lastEMA9=NULL, $lastEMA12=NULL, $lastEMA26=NULL) {
+        $this->set_lastEMA9(
