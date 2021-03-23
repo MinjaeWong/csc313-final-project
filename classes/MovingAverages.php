@@ -11,3 +11,5 @@ class MovingAverages{
     function __construct($lastEMA9=NULL, $lastEMA12=NULL, $lastEMA26=NULL) {
         $this->set_lastEMA9($lastEMA9);
         $this->set_lastEMA12($lastEMA12);
+        $this->set_lastEMA26($lastEMA26);
+    
