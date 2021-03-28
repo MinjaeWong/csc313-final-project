@@ -18,4 +18,6 @@ class MovingAverages{
         return $this->lastEMA9;
     }
     function get_lastEMA12() {
-        return $this->lastEMA1
+        return $this->lastEMA12;
+    }
+    function get_lastEMA26() 
