@@ -24,4 +24,5 @@ class MovingAverages{
         return $this->lastEMA26;
     }
 
+    function set_lastEMA9($lastEMA9) {
  
