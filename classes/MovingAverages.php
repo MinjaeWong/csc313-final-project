@@ -30,4 +30,5 @@ class MovingAverages{
     function set_lastEMA12($lastEMA12) {
         $this->lastEMA12 = $lastEMA12;
     }
-    function set_lastEMA26($lastEMA
+    function set_lastEMA26($lastEMA26) {
+        $this->lastEMA26 = $l
