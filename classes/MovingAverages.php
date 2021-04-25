@@ -36,4 +36,6 @@ class MovingAverages{
 
     function build_averages($array, $SMAMultiplier){
 
-        $comp
+        $completeData = array();
+
+        foreach ($array as
