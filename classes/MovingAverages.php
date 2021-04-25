@@ -34,4 +34,6 @@ class MovingAverages{
         $this->lastEMA26 = $lastEMA26;
     }
 
-    function build_avera
+    function build_averages($array, $SMAMultiplier){
+
+        $comp
