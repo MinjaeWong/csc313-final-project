@@ -38,4 +38,6 @@ class MovingAverages{
 
         $completeData = array();
 
-        foreach ($array as
+        foreach ($array as $key => $price){
+
+            $ema12 = $this->getEMA1
