@@ -40,4 +40,5 @@ class MovingAverages{
 
         foreach ($array as $key => $price){
 
-            $ema12 = $this->getEMA12($array, $key, 12, $price['last_pr
+            $ema12 = $this->getEMA12($array, $key, 12, $price['last_price']);
+            $ema26 = $this->getEMA
