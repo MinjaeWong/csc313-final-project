@@ -44,4 +44,6 @@ class MovingAverages{
             $ema26 = $this->getEMA26($array, $key, 26, $price['last_price']);
 
             $macd = $ema12 - $ema26;
-            $signal = $this->getSignal($c
+            $signal = $this->getSignal($completeData, $key, 9, $macd);
+
+            $com
