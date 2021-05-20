@@ -46,4 +46,5 @@ class MovingAverages{
             $macd = $ema12 - $ema26;
             $signal = $this->getSignal($completeData, $key, 9, $macd);
 
-            $com
+            $completeData[] = array(
+                "datest
