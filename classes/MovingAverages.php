@@ -47,4 +47,5 @@ class MovingAverages{
             $signal = $this->getSignal($completeData, $key, 9, $macd);
 
             $completeData[] = array(
-                "datest
+                "datestamp"  => $price['datestamp'],
+             
