@@ -49,4 +49,5 @@ class MovingAverages{
             $completeData[] = array(
                 "datestamp"  => $price['datestamp'],
                 "last_price" => $price['last_price'],
-                "ask_price"  => $price['ask_price']
+                "ask_price"  => $price['ask_price'],
+                "bid_price"  => $price['bid_pri
