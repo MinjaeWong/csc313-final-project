@@ -51,4 +51,5 @@ class MovingAverages{
                 "last_price" => $price['last_price'],
                 "ask_price"  => $price['ask_price'],
                 "bid_price"  => $price['bid_price'],
-                "volume"     => 
+                "volume"     => $price['volume'],
+                "sma50"      => $this->g
