@@ -52,4 +52,5 @@ class MovingAverages{
                 "ask_price"  => $price['ask_price'],
                 "bid_price"  => $price['bid_price'],
                 "volume"     => $price['volume'],
-                "sma50"      => $this->getSMA($array, $key, 50  * $SMAMultiplier)
+                "sma50"      => $this->getSMA($array, $key, 50  * $SMAMultiplier),
+                "sma200"     =
