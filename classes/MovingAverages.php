@@ -57,4 +57,5 @@ class MovingAverages{
                 "ema12"      => $ema12,
                 "ema26"      => $ema26,
                 "signal"     => $signal,
-        
+                "macd"       => $macd,
+             
