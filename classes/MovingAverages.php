@@ -59,4 +59,4 @@ class MovingAverages{
                 "signal"     => $signal,
                 "macd"       => $macd,
                 "divergence" => $macd - $signal,
-      
+                "vol_sma50"  => $this->get
