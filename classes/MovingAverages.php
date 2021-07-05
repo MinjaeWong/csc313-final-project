@@ -55,4 +55,5 @@ class MovingAverages{
                 "sma50"      => $this->getSMA($array, $key, 50  * $SMAMultiplier),
                 "sma200"     => $this->getSMA($array, $key, 200 * $SMAMultiplier),
                 "ema12"      => $ema12,
+                "ema26"      => $ema26,
               
