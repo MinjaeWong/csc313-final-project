@@ -66,4 +66,7 @@ class MovingAverages{
         return $completeData;
     }
 
-    function getSMA($array, $key, $period)
+    function getSMA($array, $key, $period){
+
+        if($key >= $period - 1){
+         
