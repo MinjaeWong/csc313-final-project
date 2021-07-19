@@ -69,4 +69,5 @@ class MovingAverages{
     function getSMA($array, $key, $period){
 
         if($key >= $period - 1){
-            $sma = array_slice($array, ($key - 
+            $sma = array_slice($array, ($key - $period) + 1, $period, true);
+           
