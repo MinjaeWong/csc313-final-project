@@ -73,4 +73,7 @@ class MovingAverages{
             $smaArray = array();
 
             foreach ($sma as $n => $v) {
-                $smaArray[] = $
+                $smaArray[] = $v['last_price'];
+            }
+
+            ret
