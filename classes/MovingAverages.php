@@ -76,4 +76,4 @@ class MovingAverages{
                 $smaArray[] = $v['last_price'];
             }
 
-            ret
+            return array_sum($smaArray) / $period;
