@@ -79,4 +79,7 @@ class MovingAverages{
             return array_sum($smaArray) / $period;
         }else{
             return false;
-   
+        }
+    }
+
+    function getVolSMA($array, $ke
