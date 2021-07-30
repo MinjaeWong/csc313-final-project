@@ -85,4 +85,4 @@ class MovingAverages{
     function getVolSMA($array, $key, $period){
 
         if($key >= $period - 1){
-            $sma = array_slice(
+            $sma = array_slice($array, ($key - $period) + 1, $pe
