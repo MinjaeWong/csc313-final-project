@@ -82,4 +82,6 @@ class MovingAverages{
         }
     }
 
-    function getVolSMA($array, $ke
+    function getVolSMA($array, $key, $period){
+
+        if($key >= $perio
