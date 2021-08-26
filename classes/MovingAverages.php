@@ -92,4 +92,5 @@ class MovingAverages{
                 $smaArray[] = $v['volume'];
             }
 
-            retur
+            return array_sum($smaArray) / $period;
+        }els
