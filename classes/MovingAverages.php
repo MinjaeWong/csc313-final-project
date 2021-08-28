@@ -93,4 +93,9 @@ class MovingAverages{
             }
 
             return array_sum($smaArray) / $period;
-        }els
+        }else{
+            return false;
+        }
+    }
+
+    funct
