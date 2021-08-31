@@ -98,4 +98,4 @@ class MovingAverages{
         }
     }
 
-    funct
+    function getEMA9($array, $key, $period, $lastPr
