@@ -98,4 +98,6 @@ class MovingAverages{
         }
     }
 
-    function getEMA9($array, $key, $period, $lastPr
+    function getEMA9($array, $key, $period, $lastPrice){
+
+        if($key == $period -
