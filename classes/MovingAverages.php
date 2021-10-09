@@ -113,4 +113,6 @@ class MovingAverages{
 
             return array_sum($smaArray) / $period;
 
-        }e
+        }else if($key >= $period){
+
+            $multiplier 
