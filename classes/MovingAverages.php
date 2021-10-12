@@ -115,4 +115,5 @@ class MovingAverages{
 
         }else if($key >= $period){
 
-            $multiplier 
+            $multiplier = 2/($period + 1);
+            $
