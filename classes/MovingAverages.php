@@ -119,3 +119,7 @@ class MovingAverages{
             $ema = ($lastPrice - $this->get_lastEMA9()) * $multiplier + $this->get_lastEMA9();
 
             $this->set_lastEMA9($ema);
+
+            return $ema;
+
+     
