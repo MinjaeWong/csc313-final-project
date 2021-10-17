@@ -124,4 +124,7 @@ class MovingAverages{
 
         }else{
             return false;
-        
+        }
+    }
+
+    function getEMA12($array, $key, $per
