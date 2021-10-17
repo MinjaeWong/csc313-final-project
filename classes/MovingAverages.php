@@ -127,4 +127,6 @@ class MovingAverages{
         }
     }
 
-    function getEMA12($array, $key, $per
+    function getEMA12($array, $key, $period, $lastPrice){
+
+        if($key
