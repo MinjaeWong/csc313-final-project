@@ -129,4 +129,6 @@ class MovingAverages{
 
     function getEMA12($array, $key, $period, $lastPrice){
 
-        if($key
+        if($key == $period - 1){
+
+            $sma = ar
