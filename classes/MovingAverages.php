@@ -140,4 +140,6 @@ class MovingAverages{
 
             $this->set_lastEMA12(array_sum($smaArray) / $period);
 
-            return array_sum($smaArra
+            return array_sum($smaArray) / $period;
+
+        }else if($key >= $period){
