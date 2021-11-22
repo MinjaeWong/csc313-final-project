@@ -138,4 +138,6 @@ class MovingAverages{
                 $smaArray[] = $v['last_price'];
             }
 
-            $this->set_lastEMA12(array_sum($smaArray) / $
+            $this->set_lastEMA12(array_sum($smaArray) / $period);
+
+            return array_sum($smaArra
