@@ -145,4 +145,4 @@ class MovingAverages{
         }else if($key >= $period){
 
             $multiplier = 2/($period + 1);
-            $ema = ($lastPrice - $this->get
+            $ema = ($lastPrice - $this->get_lastEMA12()) * $multiplier + $this
