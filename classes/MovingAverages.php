@@ -147,4 +147,8 @@ class MovingAverages{
             $multiplier = 2/($period + 1);
             $ema = ($lastPrice - $this->get_lastEMA12()) * $multiplier + $this->get_lastEMA12();
 
-            $this->set
+            $this->set_lastEMA12($ema);
+
+            return $ema;
+
+      
