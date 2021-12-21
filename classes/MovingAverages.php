@@ -151,4 +151,7 @@ class MovingAverages{
 
             return $ema;
 
-      
+        }else{
+            return false;
+        }
+ 
