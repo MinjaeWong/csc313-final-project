@@ -154,4 +154,6 @@ class MovingAverages{
         }else{
             return false;
         }
- 
+    }
+
+    function getEMA26($array, $key,
