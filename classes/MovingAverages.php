@@ -165,4 +165,6 @@ class MovingAverages{
 
             foreach ($sma as $n => $v) {
                 $smaArray[] = $v['last_price'];
-         
+            }
+
+            $this->set_lastEMA26(array_su
