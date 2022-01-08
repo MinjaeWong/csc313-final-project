@@ -173,4 +173,5 @@ class MovingAverages{
 
         }else if($key >= $period){
 
-            $mul
+            $multiplier = 2/($period + 1);
+            $ema = ($lastPrice
