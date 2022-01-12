@@ -178,4 +178,7 @@ class MovingAverages{
 
             $this->set_lastEMA26($ema);
 
-            retur
+            return $ema;
+
+        }else{
+            return fal
