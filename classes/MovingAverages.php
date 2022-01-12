@@ -181,4 +181,8 @@ class MovingAverages{
             return $ema;
 
         }else{
-            return fal
+            return false;
+        }
+    }
+
+    function getSigna
