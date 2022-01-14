@@ -185,4 +185,4 @@ class MovingAverages{
         }
     }
 
-    function getSigna
+    function getSignal($array, $key, $period, $lastSignal
