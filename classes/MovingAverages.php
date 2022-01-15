@@ -189,4 +189,4 @@ class MovingAverages{
 
         if($key == 33){
 
-            $
+            $sma = array_slice($array, ($key - $peri
