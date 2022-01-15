@@ -185,4 +185,8 @@ class MovingAverages{
         }
     }
 
-    function getSignal($array, $key, $period, $lastSignal
+    function getSignal($array, $key, $period, $lastSignal){
+
+        if($key == 33){
+
+            $
