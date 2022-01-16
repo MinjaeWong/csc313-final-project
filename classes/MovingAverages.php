@@ -189,4 +189,5 @@ class MovingAverages{
 
         if($key == 33){
 
-            $sma = array_slice($array, ($key - $peri
+            $sma = array_slice($array, ($key - $period) + 1, 9, true);
+            $smaArra
