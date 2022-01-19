@@ -193,4 +193,5 @@ class MovingAverages{
             $smaArray = array();
 
             foreach ($sma as $n => $v) {
-                $smaAr
+                $smaArray[] = $v['ema12'] - $v['ema26'];
+          
