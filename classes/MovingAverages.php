@@ -198,4 +198,4 @@ class MovingAverages{
 
             $smaArray[] = $lastSignal;
 
-  
+            $this->set_lastEMA9(array_sum($sma
