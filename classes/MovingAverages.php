@@ -200,4 +200,6 @@ class MovingAverages{
 
             $this->set_lastEMA9(array_sum($smaArray) / $period);
 
-            return array
+            return array_sum($smaArray) / $period;
+
+        }else if($key 
