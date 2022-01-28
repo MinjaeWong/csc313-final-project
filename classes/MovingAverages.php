@@ -205,4 +205,4 @@ class MovingAverages{
         }else if($key > 33){
 
             $multiplier = 2/($period + 1);
-            $ema = ($lastSigna
+            $ema = ($lastSignal - $this->get_lastEMA
