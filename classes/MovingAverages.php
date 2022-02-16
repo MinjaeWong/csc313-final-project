@@ -209,4 +209,7 @@ class MovingAverages{
 
             $this->set_lastEMA9($ema);
 
+            return $ema;
+
+        }else{
             re
