@@ -212,4 +212,7 @@ class MovingAverages{
             return $ema;
 
         }else{
-            re
+            return false;
+        }
+    }
+}
