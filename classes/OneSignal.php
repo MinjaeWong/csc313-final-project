@@ -47,3 +47,9 @@ class OneSignal{
                 'Authorization: Basic ' . $this->apiKey
             ]
         ]);
+        $resp = curl_exec($curl);
+        curl_close($curl);
+
+        return json_decode($resp, true);
+    }
+}
