@@ -35,3 +35,26 @@ class PriceList{
     }
     function get_volume() {
         return $this->volume;
+    }
+    function get_currencyPair() {
+        return $this->currencyPair;
+    }
+
+    function set_datestamp($datestamp) {
+        $this->datestamp = $datestamp;
+    }
+    function set_lastPrice($lastPrice) {
+        $this->lastPrice = $lastPrice;
+    }
+    function set_bidPrice($bidPrice) {
+        $this->bidPrice = $bidPrice;
+    }
+    function set_askPrice($askPrice) {
+        $this->askPrice = $askPrice;
+    }
+    function set_volume($volume) {
+        $this->volume = $volume;
+    }
+    function set_currencyPair($currencyPair) {
+        $this->currencyPair = $currencyPair;
+    }
