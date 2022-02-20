@@ -102,3 +102,48 @@ class PriceList{
         $priceList = array();
 
         while ($row = $sql->fetch_assoc()) {
+            $priceList[] = array("datestamp" => $row["datestamp"], "last_price" => $row["last_price"], "bid_price" => $row["bid_price"], "ask_price" => $row["ask_price"], "volume" => $row["volume"]);
+        }
+
+        if(!$limit){
+            $limit = count($priceList);
+        }
+
+        if(count($priceList) == $limit){
+            return $priceList;
+        }else{
+            return false;
+        }
+    }
+
+    function get_graphData($limit, $currency){
+        $db = new Db();
+        $sql = $db->query("SELECT * FROM prices_bitstamp WHERE currency_pair = '$currency' ORDER BY datestamp DESC ".($limit ? 'LIMIT '.$limit : ''));
+
+        if($sql === false) {
+            return false;
+        }
+
+        $dates = array();
+        $last  = array();
+        $bid   = array();
+        $ask   = array();
+
+        while ($row = $sql->fetch_assoc()) {
+            $dates[] = $row["datestamp"];
+            $last[] = $row["last_price"];
+            $bid[] = $row["bid_price"];
+            $ask[] = $row["ask_price"];
+        }
+        return array("labels" => array_reverse($dates), "last" => array_reverse($last), "bid" => array_reverse($bid), "ask" => array_reverse($ask));
+    }
+
+    function get_lastChange($currency){
+        $db = new Db();
+        $sql = $db->query("SELECT last_price, datestamp FROM prices_bitstamp WHERE currency_pair = '$currency' ORDER BY datestamp DESC LIMIT 2");
+
+        if($sql === false) {
+            return false;
+        }
+
+        $prices = array();
