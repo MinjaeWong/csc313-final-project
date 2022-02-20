@@ -58,3 +58,47 @@ class PriceList{
     function set_currencyPair($currencyPair) {
         $this->currencyPair = $currencyPair;
     }
+
+    function save($master = false){
+
+        $db = new Db();
+
+        $datestamp       = $db->quote($this->datestamp);
+        $lastPrice       = $db->quote($this->lastPrice);
+        $bidPrice        = $db->quote($this->bidPrice);
+        $askPrice        = $db->quote($this->askPrice);
+        $volume          = $db->quote($this->volume);
+        $currencyPair    = $db->quote($this->currencyPair);
+
+        $db->query("
+            INSERT INTO prices" . ($master ? "_bitstamp" : "") . "(
+                datestamp,
+                last_price,
+                bid_price,
+                ask_price,
+                volume".
+                ($master ? ",currency_pair" : "") .
+                ")
+            VALUES(
+                '$datestamp',
+                '$lastPrice',
+                '$bidPrice',
+                '$askPrice',
+                '$volume'".
+                ($master ? ",'$currencyPair'" : "").
+            ")
+        ");
+    }
+
+    function get_all($limit, $currency){
+
+        $db = new Db();
+        $sql = $db->query("SELECT * FROM prices_bitstamp WHERE currency_pair = '$currency' ORDER BY datestamp DESC ".($limit ? 'LIMIT '.$limit : ''));
+
+        if($sql === false) {
+            return false;
+        }
+
+        $priceList = array();
+
+        while ($row = $sql->fetch_assoc()) {
