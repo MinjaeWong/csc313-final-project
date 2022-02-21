@@ -147,3 +147,19 @@ class PriceList{
         }
 
         $prices = array();
+
+        while ($row = $sql->fetch_assoc()) {
+            $prices[] = array("price" => $row["last_price"], "datestamp" => $row["datestamp"]);
+        }
+
+        // Last Crawl Time
+        $lastPriceDate = new DateTime($prices[0]['datestamp']);
+        $lastPriceTime = $lastPriceDate->format('g:ia');
+
+        return array(
+            "last_price" => number_format($prices[0]['price'], 2, '.', ''),
+            "datestamp"  => $lastPriceTime,
+            "change"     => ($prices[0]['price'] > $prices[1]['price'] ? "up" : "down")
+        );
+    }
+}
