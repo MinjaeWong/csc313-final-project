@@ -102,3 +102,52 @@ class Trade{
     }
 
     function get_profitReport(){
+
+        $db = new Db();
+
+        $sql = $db -> query("SELECT * FROM trades WHERE sell_date IS NOT NULL ORDER BY id ASC");
+
+        if($sql === false) {
+            return false;
+        }
+
+        $tradeList = array();
+
+        while ($row = $sql->fetch_assoc()) {
+            $tradeList[] = array(
+                "buy_date"   => $row['buy_date'],
+                "sell_date"  => $row['sell_date'],
+                "buy_price"  => ($row['buy_order_price'] != NULL ? $row['buy_order_price'] : $row['buy_price']),
+                "sell_price" => ($row['sell_order_price'] != NULL ? $row['sell_order_price'] : $row['sell_price'])
+            );
+        }
+
+        // Trade Time (Count from First Buy to Last Sell so averages don't continually drop and spike up again between trades)
+        $firstBuy = new DateTime($tradeList[0]['buy_date']);
+        $lastSell = new DateTime(end($tradeList)['sell_date']);
+        $tradeTime = $firstBuy->diff($lastSell)->days;
+
+        // Last Completed Trade Result
+        $lastTradeNetPercent = number_format(($this->calculateTradeProfit(end($tradeList)['buy_price'], end($tradeList)['sell_price'], 0.0025)), 3, '.', '');
+
+        // Last Completed Trade Time Ago
+        $lastTradeAgo = new DateTime(end($tradeList)['sell_date']);
+        $now = new DateTime();
+        $timeAgo = $lastTradeAgo->diff($now)->days." days ago"; // Minutes ago
+
+        // Profit-Per-Day
+        $totalProfit = 0;
+        foreach($tradeList as $key => $trade){
+            $totalProfit += $this->calculateTradeProfit($trade['buy_price'], $trade['sell_price'], 0.0025);
+        }
+        $profitPerDay = number_format(($totalProfit / $tradeTime), 3, '.', '');
+
+        // Return Array
+        return array(
+            "profit_per_day" => $profitPerDay,
+            "last_trade"     => array(
+                "datestamp"  => $timeAgo,
+                "profit"     => $lastTradeNetPercent
+            )
+        );
+    }
