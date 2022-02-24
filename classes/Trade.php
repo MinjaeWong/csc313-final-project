@@ -151,3 +151,46 @@ class Trade{
             )
         );
     }
+
+    function buy($value, $price, $date) {
+        $db = new Db();
+        $bs = new BitStamp();
+        $orderId = 'null';
+        $orderAmount = 'null';
+        $orderPrice = 'null';
+
+        if (LIVE_ORDERS) {
+            $btc = number_format($value/$price, 8);
+            $buyOrder = $bs->buyMarketOrder($btc);
+
+            if (isset($buyOrder['id'])) {
+                $orderId = "'{$buyOrder['id']}'";
+                $orderAmount = $buyOrder['amount'];
+                $orderPrice = $buyOrder['price'];
+            }
+        }
+
+        $db->query("
+            INSERT INTO trades(
+                buy_value,
+                buy_price,
+                buy_date,
+                buy_order_id,
+                buy_order_amount,
+                buy_order_price
+                )
+            VALUES(
+                '$value',
+                '$price',
+                '$date',
+                $orderId,
+                $orderAmount,
+                $orderPrice
+            )
+        ");
+
+        // Send notification of buy
+        $os = new OneSignal();
+        $price = $orderPrice == 'null' ? $price : $orderPrice;
+        $response = $os->sendNotification("BUY: $$value @ $$price", 'Gloria feels it in the air tonight...');
+    }
