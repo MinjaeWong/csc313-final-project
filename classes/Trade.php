@@ -194,3 +194,43 @@ class Trade{
         $price = $orderPrice == 'null' ? $price : $orderPrice;
         $response = $os->sendNotification("BUY: $$value @ $$price", 'Gloria feels it in the air tonight...');
     }
+
+    function sell($sellPrice, $date){
+        $db = new Db();
+        $bs = new BitStamp();
+        $orderId = 'null';
+        $orderAmount = 'null';
+        $orderPrice = 'null';
+
+        $sql = $db->query("SELECT * FROM trades WHERE sell_date IS NULL ORDER BY id DESC LIMIT 1");
+
+        if($sql === false || mysqli_num_rows($sql) == 0) {
+            return false;
+        }
+
+        while ($row = $sql->fetch_assoc()) {
+            $tradeId = $row['id'];
+            $buyPrice = $row['buy_price'];
+            $buyValue = $row['buy_value'];
+            $buyDate = $row['buy_date'];
+            $buyOrderAmount = $row['buy_order_amount'];
+            $buyOrderPrice = $row['buy_order_price'];
+        }
+
+        if (LIVE_ORDERS) {
+            if (!empty($buyOrderAmount)) {
+                $sellOrder = $bs->sellMarketOrder($buyOrderAmount);
+
+                if (isset($sellOrder['id'])) {
+                    $orderId = "'{$sellOrder['id']}'";
+                    $orderAmount = $sellOrder['amount'];
+                    $orderPrice = $sellOrder['price'];
+                }
+            }
+        }
+
+        $db->query("
+            UPDATE trades
+            SET
+                sell_price = '$sellPrice',
+                sell_date = '$date',
