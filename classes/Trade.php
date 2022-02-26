@@ -234,3 +234,20 @@ class Trade{
             SET
                 sell_price = '$sellPrice',
                 sell_date = '$date',
+                sell_order_id = $orderId,
+                sell_order_amount = $orderAmount,
+                sell_order_price = $orderPrice
+            WHERE
+                id = '$tradeId'
+        ");
+
+        // Send notification of sale
+        $os = new OneSignal();
+        $gloria = new Gloria();
+        $sellPrice = $orderPrice == 'null' ? $sellPrice : $orderPrice;
+        $buyPrice = empty($buyOrderPrice) ? $buyPrice : $buyOrderPrice;
+        $profit = $gloria->calculateProfitPercentage($buyValue, $buyPrice, $sellPrice);
+        $profitPerc = ($profit > 0 ? '+' : '') . number_format($profit, 2, '.', '') . '%';
+        $os->sendNotification("SELL: $$sellPrice PROFIT: $profitPerc", 'Ka Ching! Crypto\'s gon Crypt.');
+    }
+}
