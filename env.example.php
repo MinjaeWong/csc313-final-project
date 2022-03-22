@@ -3,4 +3,6 @@
 //  GLORIA VERSION 1.1.0 - CONFIG
 //
 //  A quick solution to allow for different environment variables and keep keys/passwords
-//  out o
+//  out of the repo.
+//
+//  Copy this example file in 
