@@ -6,4 +6,5 @@
 //  out of the repo.
 //
 //  Copy this example file in the same root directory, remove .example (ie. env.php) and
-//  change the constants to the specific environment. This is a one off when
+//  change the constants to the specific environment. This is a one off when cloning the repo
+//  and the specific env
