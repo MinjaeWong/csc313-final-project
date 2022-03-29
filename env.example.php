@@ -12,4 +12,6 @@
 
 // App
 define('BASE_URL', 'https://projectgloria.xyz/');
-define('LIVE_ENVIRONMENT',
+define('LIVE_ENVIRONMENT', FALSE);
+define('LIVE_ORDERS', FALSE);
+define('
