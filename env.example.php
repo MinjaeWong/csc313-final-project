@@ -15,4 +15,4 @@ define('BASE_URL', 'https://projectgloria.xyz/');
 define('LIVE_ENVIRONMENT', FALSE);
 define('LIVE_ORDERS', FALSE);
 define('FIXED_TRADE_AMOUNT', 100);
-define('GET_CURRENCY_PAI
+define('GET_CURRENCY_PAIRS', ['btcusd', 'xrpusd', 'ltcusd', 'ethu
