@@ -26,4 +26,4 @@ define('DB_PASSWORD', '123');
 /*
  * Bitstamp
  *
- * 
+ * API Key and secret: https://www.bitst
