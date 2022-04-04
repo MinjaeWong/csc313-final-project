@@ -32,4 +32,5 @@ define('DB_PASSWORD', '123');
  */
 
 define('BITSTAMP_KEY', 'key');
-de
+define('BITSTAMP_SECRET', 'secret');
+define('BITST
