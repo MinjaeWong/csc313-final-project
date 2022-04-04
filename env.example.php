@@ -29,4 +29,7 @@ define('DB_PASSWORD', '123');
  * API Key and secret: https://www.bitstamp.net/account/security/api/
  * Client ID: https://www.bitstamp.net/account/balance/
  *
- *
+ */
+
+define('BITSTAMP_KEY', 'key');
+de
