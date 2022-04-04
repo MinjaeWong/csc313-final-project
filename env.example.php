@@ -20,4 +20,5 @@ define('GET_CURRENCY_PAIRS', ['btcusd', 'xrpusd', 'ltcusd', 'ethusd', 'bchusd'])
 // Database
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'projectgloria_btc');
-define('DB_USER'
+define('DB_USER', 'root');
+define('DB_PASSWORD', '1
