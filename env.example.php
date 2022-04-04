@@ -17,4 +17,6 @@ define('LIVE_ORDERS', FALSE);
 define('FIXED_TRADE_AMOUNT', 100);
 define('GET_CURRENCY_PAIRS', ['btcusd', 'xrpusd', 'ltcusd', 'ethusd', 'bchusd']);
 
-// Dat
+// Database
+define('DB_HOST', 'localhost');
+define(
