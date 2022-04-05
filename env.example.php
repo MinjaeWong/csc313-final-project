@@ -33,4 +33,7 @@ define('DB_PASSWORD', '123');
 
 define('BITSTAMP_KEY', 'key');
 define('BITSTAMP_SECRET', 'secret');
-define('BITST
+define('BITSTAMP_CLIENTID', 'client');
+
+// OneSignal
+define(
