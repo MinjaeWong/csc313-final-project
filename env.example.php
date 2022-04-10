@@ -37,4 +37,4 @@ define('BITSTAMP_CLIENTID', 'client');
 
 // OneSignal
 define('ONESIGNAL_APP_ID', '');
-define('ONES
+define('ONESIGNAL_APP_KEY', '');
