@@ -31,4 +31,7 @@
     <style>
       .cls-1 {
         fill: #242424;
-        fil
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 
