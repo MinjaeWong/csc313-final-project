@@ -44,4 +44,5 @@
     </style>
     <filter id="filter" x="0" y="0" width="800" height="800" filterUnits="userSpaceOnUse">
       <feImage preserveAspectRatio="none" x="0" y="0" width="800" height="800" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iODAwIiB5MT0iODAwIiB4Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMzQ1IiBzdG9wLWNvbG9yPSIjMGNmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC42NTUiIHN0b3AtY29sb3I9IiNmZjFkZTAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjgwMCIgaGVpZ2h0PSI4MDAiLz4KPC9zdmc+Cg=="/>
-      <feComposite result="composite" operator="in" in2
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend res
