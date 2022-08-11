@@ -6,4 +6,6 @@
 // Set Timezone
 date_default_timezone_set('Australia/Brisbane');
 
-// Configuration Settings (WARNING!!!! Changing these affects the algorithm on LIVE & SI
+// Configuration Settings (WARNING!!!! Changing these affects the algorithm on LIVE & SIMULATION mode)
+function coinConfig($currency){
+   
