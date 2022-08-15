@@ -11,4 +11,5 @@ function coinConfig($currency){
     switch ($currency) {
 
         case "btcusd":
-       
+            return array(
+                "SMAMultiplie
