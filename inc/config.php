@@ -12,4 +12,4 @@ function coinConfig($currency){
 
         case "btcusd":
             return array(
-                "SMAMultiplie
+                "SMAMultiplier"   => 2.88,  // 50 / 200 Period SMA Multipl
