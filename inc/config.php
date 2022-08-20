@@ -21,4 +21,5 @@ function coinConfig($currency){
             break;
 
         case "ltcusd":
-            return array
+            return array(
+                "SMAMultiplier"   => 2.88,  // 5
