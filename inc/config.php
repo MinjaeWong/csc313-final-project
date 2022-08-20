@@ -20,4 +20,5 @@ function coinConfig($currency){
             );
             break;
 
-        ca
+        case "ltcusd":
+            return array
