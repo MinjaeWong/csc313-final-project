@@ -22,4 +22,5 @@ function coinConfig($currency){
 
         case "ltcusd":
             return array(
-                "SMAMultiplier"   => 2.88,  // 50 / 200 Period SMA Multiplier (2.88 = 1 Day / 4 Days
+                "SMAMultiplier"   => 2.88,  // 50 / 200 Period SMA Multiplier (2.88 = 1 Day / 4 Days)
+                "MACDBuyOffset
