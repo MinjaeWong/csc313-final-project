@@ -31,4 +31,5 @@ function coinConfig($currency){
             break;
 
         case "ethusd":
-            retur
+            return array(
+                "SMAMultip
