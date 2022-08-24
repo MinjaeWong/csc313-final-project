@@ -32,4 +32,5 @@ function coinConfig($currency){
 
         case "ethusd":
             return array(
-                "SMAMultiplier"   => 2.88,  // 50 / 200 Period SMA Multipl
+                "SMAMultiplier"   => 2.88,  // 50 / 200 Period SMA Multiplier (2.88 = 1 Day / 4 Days)
+         
