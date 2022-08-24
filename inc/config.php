@@ -29,3 +29,6 @@ function coinConfig($currency){
                 "VolAvMultiplier" => 0.02  // % of Average Volume above current volume required to buy
             );
             break;
+
+        case "ethusd":
+            retur
