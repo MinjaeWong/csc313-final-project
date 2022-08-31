@@ -36,4 +36,4 @@ function coinConfig($currency){
                 "MACDBuyOffset"   => 3,     // To buy, MACD + Offset must be < Previous MACD
                 "MACDSellOffset"  => 1,     // To Sell, MACD must be > Offset
                 "MACDMinimum"     => 0,   // To buy, MACD must be < Minimum
-                "VolAvMul
+                "VolAvMultiplier" => 0.02  // % of Average V
