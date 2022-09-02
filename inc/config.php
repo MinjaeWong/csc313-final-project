@@ -40,4 +40,6 @@ function coinConfig($currency){
             );
             break;
 
-        case "xrpus
+        case "xrpusd":
+            return array(
+    
