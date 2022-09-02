@@ -42,4 +42,4 @@ function coinConfig($currency){
 
         case "xrpusd":
             return array(
-    
+                "SMAMultiplier"   => 2.88, 
