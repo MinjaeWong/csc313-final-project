@@ -42,4 +42,4 @@ function coinConfig($currency){
 
         case "xrpusd":
             return array(
-                "SMAMultiplier"   => 2.88, 
+                "SMAMultiplier"   => 2.88,    // 50 / 200 Period SMA Multipli
