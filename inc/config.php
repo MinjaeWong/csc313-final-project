@@ -45,4 +45,5 @@ function coinConfig($currency){
                 "SMAMultiplier"   => 2.88,    // 50 / 200 Period SMA Multiplier (2.88 = 1 Day / 4 Days)
                 "MACDBuyOffset"   => 0.0005,  // To buy, MACD + Offset must be < Previous MACD
                 "MACDSellOffset"  => 0.00205, // To Sell, MACD must be > Offset
-                "MACDMinimum"     => 0,   // To buy, MACD mus
+                "MACDMinimum"     => 0,   // To buy, MACD must be < Minimum
+                "VolAvMult
