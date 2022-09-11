@@ -50,4 +50,6 @@ function coinConfig($currency){
             );
             break;
 
-        case
+        case "bchusd":
+            return array(
+      
