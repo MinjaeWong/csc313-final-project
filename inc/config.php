@@ -52,4 +52,4 @@ function coinConfig($currency){
 
         case "bchusd":
             return array(
-      
+                "SMAMultiplier"   => 2.88
