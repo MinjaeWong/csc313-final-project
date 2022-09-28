@@ -61,4 +61,7 @@ function coinConfig($currency){
             break;
     }
 
-   
+    return false;
+}
+
+// Load Environment Const
