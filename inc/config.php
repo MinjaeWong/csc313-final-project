@@ -64,4 +64,7 @@ function coinConfig($currency){
     return false;
 }
 
-// Load Environment Const
+// Load Environment Constants
+require_once('../../env.php');
+
+// Load C
