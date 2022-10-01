@@ -67,4 +67,5 @@ function coinConfig($currency){
 // Load Environment Constants
 require_once('../../env.php');
 
-// Load C
+// Load Class Library
+require_once('../classes/Db.
