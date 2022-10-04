@@ -68,4 +68,5 @@ function coinConfig($currency){
 require_once('../../env.php');
 
 // Load Class Library
-require_once('../classes/Db.
+require_once('../classes/Db.php');
+require_once('../classes/BitS
