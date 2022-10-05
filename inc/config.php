@@ -69,4 +69,5 @@ require_once('../../env.php');
 
 // Load Class Library
 require_once('../classes/Db.php');
-require_once('../classes/BitS
+require_once('../classes/BitStamp.php');
+require_once('../classes/OneS
