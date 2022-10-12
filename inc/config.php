@@ -74,4 +74,4 @@ require_once('../classes/OneSignal.php');
 require_once('../classes/PriceList.php');
 require_once('../classes/MovingAverages.php');
 require_once('../classes/Gloria.php');
-r
+require_once('../classes/Trade.php');
