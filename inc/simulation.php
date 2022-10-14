@@ -74,3 +74,53 @@ if($priceList){
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <script src="https://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
 <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+
+<script>
+
+    var btcPriceConfig = {
+        type: 'line',
+        data: {
+            labels: [<?="'".implode ("', '", $graphData['labels'])."'"?>],
+            datasets: [{
+                label: 'Last Price',
+                fill: false,
+                borderWidth: 1,
+                pointRadius: 0,
+                backgroundColor: '#f740c4',
+                borderColor: '#f740c4',
+                data: [
+                    <?=implode (", ", $graphData['last'])?>
+                ]
+            },{
+                label: 'Bid Price',
+                fill: false,
+                borderWidth: 1,
+                pointRadius: 0,
+                backgroundColor: '#f7f41f',
+                borderColor: '#f7f41f',
+                data: [
+                    <?=implode (", ", $graphData['bid'])?>
+                ]
+            },{
+                label: 'Ask Price',
+                fill: false,
+                borderWidth: 1,
+                pointRadius: 0,
+                backgroundColor: '#40f7e1',
+                borderColor: '#40f7e1',
+                data: [
+                    <?=implode (", ", $graphData['ask'])?>
+                ]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            title: {
+                display: true,
+                text: 'Market Prices - Last 6 Hours (USD)'
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
