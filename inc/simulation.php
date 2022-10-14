@@ -148,3 +148,15 @@ if($priceList){
                         display: false,
                         drawBorder: false
                     }
+                }]
+            }
+        }
+    };
+
+    window.onload = function() {
+        var btcPrice = document.getElementById('btc-canvas-price').getContext('2d');
+        window.myLine = new Chart(btcPrice, btcPriceConfig);
+    };
+</script>
+</body>
+</html>
