@@ -124,3 +124,27 @@ if($priceList){
                 mode: 'index',
                 intersect: false
             },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    ticks: {
+                        display: false
+                    },
+                    gridLines: {
+                        display: false,
+                        drawBorder: false
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    ticks: {
+                        display: false
+                    },
+                    gridLines: {
+                        display: false,
+                        drawBorder: false
+                    }
