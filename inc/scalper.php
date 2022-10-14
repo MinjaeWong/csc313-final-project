@@ -66,3 +66,11 @@ foreach (array_reverse($priceList) as $key => $data){
                 $holding = false;
                 $bp = 0;
                 $totalProfit += $profit;
+
+            }
+        }
+    }
+}
+
+echo "total profits: ".number_format($totalProfit, 2, '.', '')."%<br/><br/>";
+print_r($tradeArray);
