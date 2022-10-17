@@ -3,4 +3,5 @@
 //  GLORIA VERSION 1.1.0 - Simple Dashboard to display recent automated trades, prices etc.
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Config 
+// Config & Class Library
+require_once('../e
