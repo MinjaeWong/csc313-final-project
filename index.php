@@ -15,4 +15,6 @@ $db = new Db();
 // Get Price Data
 $prices = new PriceList();
 $graphData = $prices->get_graphData(72, 'btcusd');
-$lastPrice 
+$lastPrice = $prices->get_lastChange('btcusd');
+
+// Get Ac
