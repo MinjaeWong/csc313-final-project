@@ -18,4 +18,6 @@ $graphData = $prices->get_graphData(72, 'btcusd');
 $lastPrice = $prices->get_lastChange('btcusd');
 
 // Get Account Data
-$bs = new BitStamp(
+$bs = new BitStamp();
+$accountValue = $bs->get_balance();
+$a
