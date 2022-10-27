@@ -13,4 +13,5 @@ require_once('classes/Trade.php');
 $db = new Db();
 
 // Get Price Data
-$price
+$prices = new PriceList();
+$graphData = $price
