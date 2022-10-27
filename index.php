@@ -10,3 +10,7 @@ require_once('classes/PriceList.php');
 require_once('classes/BitStamp.php');
 require_once('classes/Trade.php');
 
+$db = new Db();
+
+// Get Price Data
+$price
