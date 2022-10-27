@@ -17,4 +17,5 @@ $prices = new PriceList();
 $graphData = $prices->get_graphData(72, 'btcusd');
 $lastPrice = $prices->get_lastChange('btcusd');
 
-// Get Ac
+// Get Account Data
+$bs = new BitStamp(
