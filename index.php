@@ -20,4 +20,4 @@ $lastPrice = $prices->get_lastChange('btcusd');
 // Get Account Data
 $bs = new BitStamp();
 $accountValue = $bs->get_balance();
-$accountValueUSD = number_format(($accountValue['btc_balance'] * $lastPrice
+$accountValueUSD = number_format(($accountValue['btc_balance'] * $lastPrice['last_price']) + $accountValue['usd_balance']
