@@ -30,4 +30,4 @@ $profitReport = $profit->get_profitReport();
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta 
+    <meta name="viewport" content="width=device-widt
