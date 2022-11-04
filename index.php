@@ -24,4 +24,7 @@ $accountValueUSD = number_format(($accountValue['btc_balance'] * $lastPrice['las
 
 // Get Trade Data
 $profit = new Trade();
-$profitReport = $profit->get_profitR
+$profitReport = $profit->get_profitReport();
+?>
+<!doctype html>
+<html lang="en"
