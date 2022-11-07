@@ -31,4 +31,5 @@ $profitReport = $profit->get_profitReport();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="no
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="short
