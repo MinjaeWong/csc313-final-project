@@ -37,4 +37,5 @@ $profitReport = $profit->get_profitReport();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="css/gloria.min.css">
     <title>Gloria</title>
-    <link rel="manifest" hre
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://cdn.o
