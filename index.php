@@ -38,4 +38,6 @@ $profitReport = $profit->get_profitReport();
     <link rel="stylesheet" href="css/gloria.min.css">
     <title>Gloria</title>
     <link rel="manifest" href="manifest.json" />
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSign
