@@ -46,4 +46,7 @@ $profitReport = $profit->get_profitReport();
                 appId: "<?= ONESIGNAL_APP_ID ?>",
             });
         });
-  
+    </script>
+</head>
+<body>
+<div id="disp
