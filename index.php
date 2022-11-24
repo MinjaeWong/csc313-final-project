@@ -43,4 +43,7 @@ $profitReport = $profit->get_profitReport();
         var OneSignal = window.OneSignal || [];
         OneSignal.push(function() {
             OneSignal.init({
-                appId: "<?= ONESIGN
+                appId: "<?= ONESIGNAL_APP_ID ?>",
+            });
+        });
+  
