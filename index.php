@@ -49,4 +49,5 @@ $profitReport = $profit->get_profitReport();
     </script>
 </head>
 <body>
-<div id="disp
+<div id="display">
+    <div class="block-contai
