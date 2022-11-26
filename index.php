@@ -52,4 +52,4 @@ $profitReport = $profit->get_profitReport();
 <div id="display">
     <div class="block-container">
         <div class="block">
-       
+            <h2>$<?=$accountValueUSD?></h2
