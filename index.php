@@ -50,4 +50,6 @@ $profitReport = $profit->get_profitReport();
 </head>
 <body>
 <div id="display">
-    <div class="block-contai
+    <div class="block-container">
+        <div class="block">
+       
