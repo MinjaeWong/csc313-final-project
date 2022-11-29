@@ -55,4 +55,5 @@ $profitReport = $profit->get_profitReport();
             <h2>$<?=$accountValueUSD?></h2>
             <p>Account Value</p>
         </div>
-        <div class="block"
+        <div class="block">
+            <h3>$<?=number_f
