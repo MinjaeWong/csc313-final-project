@@ -56,4 +56,4 @@ $profitReport = $profit->get_profitReport();
             <p>Account Value</p>
         </div>
         <div class="block">
-            <h3>$<?=number_f
+            <h3>$<?=number_format($lastPrice['last_price'], 2, '.', ',')?><
