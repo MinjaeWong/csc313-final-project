@@ -57,4 +57,5 @@ $profitReport = $profit->get_profitReport();
         </div>
         <div class="block">
             <h3>$<?=number_format($lastPrice['last_price'], 2, '.', ',')?></h3>
-            <p>Last Price (<?=$las
+            <p>Last Price (<?=$lastPrice['datestamp']?>)</p>
+        </div
