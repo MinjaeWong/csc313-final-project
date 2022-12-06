@@ -60,4 +60,5 @@ $profitReport = $profit->get_profitReport();
             <p>Last Price (<?=$lastPrice['datestamp']?>)</p>
         </div>
         <div class="block">
-            <h3><?=($profitReport['last_trade']['profit'] > 0 ? '+' : '').$profitReport['last
+            <h3><?=($profitReport['last_trade']['profit'] > 0 ? '+' : '').$profitReport['last_trade']['profit']?>%</h3>
+           
