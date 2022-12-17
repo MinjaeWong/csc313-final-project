@@ -67,4 +67,5 @@ $profitReport = $profit->get_profitReport();
             <h3><?=($profitReport['profit_per_day'] > 0 ? '+' : '').$profitReport['profit_per_day']?>%</h3>
             <p>Average Daily Profit</p>
         </div>
-        <div cla
+        <div class="block last">
+            <h3><?=(($
