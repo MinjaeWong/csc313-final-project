@@ -69,4 +69,6 @@ $profitReport = $profit->get_profitReport();
         </div>
         <div class="block last">
             <h3><?=(($profitReport['profit_per_day'] * 30.4167) > 0 ? '+' : '').number_format(($profitReport['profit_per_day'] * 30.4167), 3, '.', '')?>%</h3>
-            <p>Average Monthly
+            <p>Average Monthly Profit</p>
+        </div>
+    </di
