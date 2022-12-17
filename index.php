@@ -71,4 +71,7 @@ $profitReport = $profit->get_profitReport();
             <h3><?=(($profitReport['profit_per_day'] * 30.4167) > 0 ? '+' : '').number_format(($profitReport['profit_per_day'] * 30.4167), 3, '.', '')?>%</h3>
             <p>Average Monthly Profit</p>
         </div>
-    </di
+    </div>
+</div>
+<div id="chart-container">
+ 
