@@ -74,4 +74,4 @@ $profitReport = $profit->get_profitReport();
     </div>
 </div>
 <div id="chart-container">
- 
+    <canvas id="btc-canvas-price"></canvas>
