@@ -76,4 +76,5 @@ $profitReport = $profit->get_profitReport();
 <div id="chart-container">
     <canvas id="btc-canvas-price"></canvas>
 </div>
-<img id="logo" src="../img/gloria-l
+<img id="logo" src="../img/gloria-logo-white-sm.png" />
+<span class="ver
