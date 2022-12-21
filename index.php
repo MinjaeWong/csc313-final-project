@@ -77,4 +77,4 @@ $profitReport = $profit->get_profitReport();
     <canvas id="btc-canvas-price"></canvas>
 </div>
 <img id="logo" src="../img/gloria-logo-white-sm.png" />
-<span class="ver
+<span class="version">Gloria Version 1.1.0</span>
