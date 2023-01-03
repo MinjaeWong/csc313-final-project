@@ -82,4 +82,5 @@ $profitReport = $profit->get_profitReport();
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <script src="https://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
 <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
-<script s
+<script src="js/gloria.min.js"></script>
+<script
