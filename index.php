@@ -85,4 +85,5 @@ $profitReport = $profit->get_profitReport();
 <script src="js/gloria.min.js"></script>
 <script>
     setTimeout(function(){
-   
+            window.location.reload();
+  
