@@ -86,4 +86,6 @@ $profitReport = $profit->get_profitReport();
 <script>
     setTimeout(function(){
             window.location.reload();
-  
+    }, 600000);
+
+    var btcPrice
