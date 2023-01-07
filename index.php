@@ -91,3 +91,4 @@ $profitReport = $profit->get_profitReport();
     var btcPriceConfig = {
         type: 'line',
         data: {
+            labels: [<?="'".implode
