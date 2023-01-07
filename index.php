@@ -88,4 +88,6 @@ $profitReport = $profit->get_profitReport();
             window.location.reload();
     }, 600000);
 
-    var btcPrice
+    var btcPriceConfig = {
+        type: 'line',
+        data: {
