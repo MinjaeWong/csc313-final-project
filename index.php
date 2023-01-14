@@ -94,4 +94,5 @@ $profitReport = $profit->get_profitReport();
             labels: [<?="'".implode ("', '", $graphData['labels'])."'"?>],
             datasets: [{
                 fill: true,
-     
+                borderWidth: 1,
+        
