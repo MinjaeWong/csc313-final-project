@@ -95,4 +95,5 @@ $profitReport = $profit->get_profitReport();
             datasets: [{
                 fill: true,
                 borderWidth: 1,
-        
+                pointRadius: 0,
+                
