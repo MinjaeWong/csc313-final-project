@@ -96,4 +96,5 @@ $profitReport = $profit->get_profitReport();
                 fill: true,
                 borderWidth: 1,
                 pointRadius: 0,
-                backgroundColor: 'rgba(255, 255, 255,
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderColor: 'rgba(255,
