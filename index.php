@@ -101,4 +101,7 @@ $profitReport = $profit->get_profitReport();
                 data: [
                     <?=implode (", ", $graphData['last'])?>
                 ]
-     
+            }]
+        },
+        options: {
+ 
