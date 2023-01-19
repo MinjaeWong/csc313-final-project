@@ -104,4 +104,5 @@ $profitReport = $profit->get_profitReport();
             }]
         },
         options: {
- 
+            elements: {
+                line: 
