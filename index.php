@@ -107,4 +107,7 @@ $profitReport = $profit->get_profitReport();
             elements: {
                 line: {
                     tension: 0
-                
+                }
+            },
+            legend: {
+         
