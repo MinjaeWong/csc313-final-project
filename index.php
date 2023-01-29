@@ -110,4 +110,6 @@ $profitReport = $profit->get_profitReport();
                 }
             },
             legend: {
-         
+                display: false
+            },
+           
