@@ -112,4 +112,5 @@ $profitReport = $profit->get_profitReport();
             legend: {
                 display: false
             },
-           
+            responsive: true,
+            mainta
