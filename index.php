@@ -114,4 +114,6 @@ $profitReport = $profit->get_profitReport();
             },
             responsive: true,
             maintainAspectRatio: false,
-            ti
+            title: {
+                display: false
+            },
