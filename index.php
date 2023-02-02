@@ -117,3 +117,5 @@ $profitReport = $profit->get_profitReport();
             title: {
                 display: false
             },
+            tooltips: {
+             
