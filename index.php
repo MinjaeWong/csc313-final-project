@@ -118,4 +118,5 @@ $profitReport = $profit->get_profitReport();
                 display: false
             },
             tooltips: {
-             
+                mode: 'index',
+                intersect
