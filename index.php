@@ -119,4 +119,7 @@ $profitReport = $profit->get_profitReport();
             },
             tooltips: {
                 mode: 'index',
-                intersect
+                intersect: false
+            },
+            hover: {
+          
