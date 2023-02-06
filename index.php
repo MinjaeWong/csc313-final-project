@@ -123,4 +123,6 @@ $profitReport = $profit->get_profitReport();
             },
             hover: {
                 mode: 'nearest',
-                i
+                intersect: true
+            },
+            scales: {
