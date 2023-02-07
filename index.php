@@ -127,4 +127,5 @@ $profitReport = $profit->get_profitReport();
             },
             scales: {
                 xAxes: [{
-                
+                    display: true,
+                    ti
