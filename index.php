@@ -126,3 +126,5 @@ $profitReport = $profit->get_profitReport();
                 intersect: true
             },
             scales: {
+                xAxes: [{
+                
