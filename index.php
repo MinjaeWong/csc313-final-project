@@ -131,4 +131,5 @@ $profitReport = $profit->get_profitReport();
                     ticks: {
                         display: false
                     },
-       
+                    gridLines: {
+                    
