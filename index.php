@@ -129,4 +129,6 @@ $profitReport = $profit->get_profitReport();
                 xAxes: [{
                     display: true,
                     ticks: {
-                        displ
+                        display: false
+                    },
+       
