@@ -133,4 +133,6 @@ $profitReport = $profit->get_profitReport();
                     },
                     gridLines: {
                         display: false,
-                        d
+                        drawBorder: false
+                    }
+            
