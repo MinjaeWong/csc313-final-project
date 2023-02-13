@@ -137,4 +137,5 @@ $profitReport = $profit->get_profitReport();
                     }
                 }],
                 yAxes: [{
-        
+                    display: true,
+            
