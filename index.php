@@ -142,4 +142,5 @@ $profitReport = $profit->get_profitReport();
                         display: false
                     },
                     gridLines: {
-                
+                        display: false,
+                        drawBor
