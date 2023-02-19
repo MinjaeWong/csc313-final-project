@@ -149,4 +149,4 @@ $profitReport = $profit->get_profitReport();
             }
         }
     };
-   
+    window.onload = function()
