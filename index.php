@@ -149,4 +149,5 @@ $profitReport = $profit->get_profitReport();
             }
         }
     };
-    window.onload = function()
+    window.onload = function() {
+        var btcPrice = document.getElem
