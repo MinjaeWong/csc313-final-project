@@ -151,4 +151,7 @@ $profitReport = $profit->get_profitReport();
     };
     window.onload = function() {
         var btcPrice = document.getElementById('btc-canvas-price').getContext('2d');
-        window.myLine = new Chart(btcPri
+        window.myLine = new Chart(btcPrice, btcPriceConfig, );
+    };
+
+</scrip
