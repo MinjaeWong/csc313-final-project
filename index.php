@@ -154,4 +154,6 @@ $profitReport = $profit->get_profitReport();
         window.myLine = new Chart(btcPrice, btcPriceConfig, );
     };
 
-</scrip
+</script>
+</body>
+</html>
