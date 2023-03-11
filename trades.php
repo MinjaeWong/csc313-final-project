@@ -5,4 +5,5 @@
 
 // Config & Class Library
 require_once('../env.php');
-require_once('classes/Db.php'
+require_once('classes/Db.php');
+require_once('classes/Gloria.php');
