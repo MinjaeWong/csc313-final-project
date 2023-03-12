@@ -7,3 +7,7 @@
 require_once('../env.php');
 require_once('classes/Db.php');
 require_once('classes/Gloria.php');
+require_once('classes/Trade.php');
+
+?>
+<!d
