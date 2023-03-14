@@ -12,4 +12,6 @@ require_once('classes/Trade.php');
 ?>
 <!doctype html>
 <html lang="en">
-<he
+<head>
+    <meta charset="utf-8">
+    <meta name="viewp
