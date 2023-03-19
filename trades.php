@@ -17,4 +17,4 @@ require_once('classes/Trade.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="noindex, nofollow">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-    <li
+    <link rel="stylesheet" href="https://stackpat
