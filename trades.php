@@ -26,4 +26,7 @@ require_once('classes/Trade.php');
             background: #302c38;
             color: #756d86;
             font-weight: 300;
-            fo
+            font-size:12px;
+            margin: 20px;
+        }
+ 
