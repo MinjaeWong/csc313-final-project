@@ -24,4 +24,6 @@ require_once('classes/Trade.php');
         body{
             font-family: 'Source Code Pro', monospace;
             background: #302c38;
-            color: #756d8
+            color: #756d86;
+            font-weight: 300;
+            fo
