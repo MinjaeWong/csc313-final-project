@@ -20,4 +20,4 @@ require_once('classes/Trade.php');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <title>GLORIA VERSION 1.1.0</title>
     <style>
-        @import url('https://fonts
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400'
