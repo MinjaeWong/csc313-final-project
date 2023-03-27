@@ -23,4 +23,5 @@ require_once('classes/Trade.php');
         @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400');
         body{
             font-family: 'Source Code Pro', monospace;
-          
+            background: #302c38;
+            color: #756d8
