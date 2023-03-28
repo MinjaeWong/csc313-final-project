@@ -38,4 +38,6 @@ require_once('classes/Trade.php');
         }
         .green{
             color: #0f0;
-   
+        }
+        .blue{
+            
