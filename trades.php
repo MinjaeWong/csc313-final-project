@@ -43,3 +43,5 @@ require_once('classes/Trade.php');
             color: #00ccff;
         }
         .pink{
+            color: #ff1de0;
+        }
