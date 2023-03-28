@@ -29,4 +29,5 @@ require_once('classes/Trade.php');
             font-size:12px;
             margin: 20px;
         }
- 
+        p{
+            margin-top: 
