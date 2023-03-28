@@ -30,4 +30,6 @@ require_once('classes/Trade.php');
             margin: 20px;
         }
         p{
-            margin-top: 
+            margin-top: 0;
+            margin-bottom: 3px;
+       
