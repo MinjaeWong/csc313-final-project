@@ -32,4 +32,7 @@ require_once('classes/Trade.php');
         p{
             margin-top: 0;
             margin-bottom: 3px;
-       
+        }
+        .white{
+            color: #fff;
+   
