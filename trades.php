@@ -35,4 +35,7 @@ require_once('classes/Trade.php');
         }
         .white{
             color: #fff;
+        }
+        .green{
+            color: #0f0;
    
