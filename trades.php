@@ -40,4 +40,6 @@ require_once('classes/Trade.php');
             color: #0f0;
         }
         .blue{
-            
+            color: #00ccff;
+        }
+        .pink{
