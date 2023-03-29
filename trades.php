@@ -45,3 +45,5 @@ require_once('classes/Trade.php');
         .pink{
             color: #ff1de0;
         }
+        .red{
+            color: #f30;
