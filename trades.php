@@ -50,4 +50,5 @@ require_once('classes/Trade.php');
         }
     </style>
 
-    <link rel="manifest" 
+    <link rel="manifest" href="manifest.json" />
+    <script src
