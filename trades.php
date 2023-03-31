@@ -47,3 +47,7 @@ require_once('classes/Trade.php');
         }
         .red{
             color: #f30;
+        }
+    </style>
+
+    <link rel="manifest" 
