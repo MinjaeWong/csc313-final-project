@@ -53,4 +53,5 @@ require_once('classes/Trade.php');
     <link rel="manifest" href="manifest.json" />
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
-        var OneSigna
+        var OneSignal = window.OneSignal || [];
+        One
