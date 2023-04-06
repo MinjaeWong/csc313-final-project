@@ -63,4 +63,5 @@ require_once('classes/Trade.php');
 </head>
 <body>
 <img src="/img/gloria-logo-lg.png" style="width: 80px;margin-bottom: 20px;" />
-<?php $trade = new Trade(); $tradeList = $trade->get_all
+<?php $trade = new Trade(); $tradeList = $trade->get_allTrades(); ?>
+<script src="https://code.jquery.
