@@ -62,4 +62,4 @@ require_once('classes/Trade.php');
     </script>
 </head>
 <body>
-<im
+<img src="/img/gloria-logo-lg.png" style="width: 80px;mar
