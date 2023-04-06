@@ -58,4 +58,8 @@ require_once('classes/Trade.php');
             OneSignal.init({
                 appId: "<?= ONESIGNAL_APP_ID ?>",
             });
-        }
+        });
+    </script>
+</head>
+<body>
+<im
